@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const dbConnect = require('./config/dbConnect')
 const userRoute = require('./routes/users/usersRoute')
 const { errorHandler, notFound } = require('./middlewares/errorMiddleware')
@@ -10,6 +11,7 @@ const app = express()
 dbConnect()
 
 app.use(express.json())
+app.use(cors())
 
 //Routes
 app.use('/api/users', userRoute)
