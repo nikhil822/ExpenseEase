@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalSyle = createGlobalStyle`
     * {
@@ -50,4 +50,4 @@ export const GlobalSyle = createGlobalStyle`
             }
         }
     }
-`
+`;
